@@ -59,17 +59,17 @@ print(10 - 6 ** 2 / 9 * 10 + 1)
 ```
 2. The next priority goes to the _division_ (/) and _multiplication_ (*) operators. Since, the _division operator_ is on the lefthand side, we do the _divison_ first and then the _multiplication_.
 ```
-10 - 4 * 10 + 1
+10 - 4.0 * 10 + 1
 ```
 ```
-10 - 40 + 1
+10 - 40.0 + 1
 ```
 3. Finally, we have the _least priority_ opeerators left (- and +). Again, we calculate the result from the lefthand side.
 ```
--30 + 1
+-30.0 + 1
 ```
 ```
--29
+-29.0 
 ```
 4. So, the final ouput that Python prints to the console is _-29_.
 
