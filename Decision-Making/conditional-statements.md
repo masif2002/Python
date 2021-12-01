@@ -1,6 +1,8 @@
 # Conditional Statements
 
-
+* `if` keyword is used to check for a condition
+* `elif` is used to check for an alternative condition
+* `else` is used if you want to _do something_ if none of the conditions come out to be True.
 ```
 if [condition1]:                    
     print("Condition1 is true)  
