@@ -1,8 +1,4 @@
-# Operators
-
-To calculate values, we use Arithmetic Operators.
-
-## Arithmetic Operators  
+# Arithmetic Operators  
 * Exponentiation Operator (**)  
 &rarr; Ex: `a**b` where _a_ is the base and _b_ is the exponent   
 &rarr; If both the values are _integers_, the result will also be an _integer_, however even if one of the values is a _floating point number_, the result will be a _floating point number_ aswell.
