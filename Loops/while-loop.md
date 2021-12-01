@@ -1,7 +1,7 @@
 # While Loop
 
 A while loop is known as a conditional loop. 
-* The while keyword allows you to execute a block of code repeatedly as long as a certain condition is True.
+* The `while` keyword allows you to execute a block of code repeatedly as long as a certain condition is True.
 * This means that that code block can run repeatedly as long as the conditon is true
 * If the condition is false, it exits the loop.
 
