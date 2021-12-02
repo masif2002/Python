@@ -20,6 +20,11 @@ cars.insert(1, "Mazda")
 cars.pop()     # Pops the last element
 cars.pop(1)    # Pops the element with index 1
 ```
+* `index()` - This method returns the index of the item in array.
+```python
+num = [0, 3, 4, 1, 2]
+print(num.index(1))
+``` 
 * `sort()` - This method sorts the array in ascending order. This method **modifies** the original array.
 ```python
 ages = [45, 89, 54, 21, 26, 6]
