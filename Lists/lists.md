@@ -52,7 +52,6 @@ if ("B" in letters):
 if ("Z" not in letters):
     print("Z is not present!")
 ```
-For example, if we want to check 
 ## len() function
 The built-in `len()` function allows us to get the length of a list.
 ```python
