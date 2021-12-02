@@ -35,6 +35,13 @@ We can also change the value on a specific index
 countries[1] = "India"
 print(countries)
 ```
+## Traversing a list
+With a for-loop, we can traverse a list. 
+```python
+careers = ["Pilot", "Teacher", "Developer", "Doctor"]
+for i in careers:
+    print(i)
+```
 ## len() function
 The built-in `len()` function allows us to get the length of a list.
 ```python
