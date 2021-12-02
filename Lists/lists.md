@@ -57,3 +57,9 @@ For example, if we need to delete the third item in our list, we do
 del countries[2]
 print(countries)
 ```
+---
+> Note:  
+> * `enumerate()` adds a counter to an iterable and returns it in a form of enumerating object.
+> * There was a quiz question which invloved `enumerate()`, so keep a note of it.  
+Ref: 
+> https://www.geeksforgeeks.org/enumerate-in-python/ 
