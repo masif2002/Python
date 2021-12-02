@@ -26,14 +26,26 @@ the second value that we pass is the value of num2.
 ## Named Arguments
 
 * If you don't want the position of the arguments to matter, you can pass **named arguments**.
-
+* Named arguments are also known as **Keyword Arguments**.
 ```python
 def subtract(num1, num2):
     return num1 - num2
 
 diff = subtract(num2=10, num1=60)
+print(diff)
 ```
 Here, in the function _subtract_, num1 is taken as 60 and num2 is taken as 10, although the order of the parameter in the function statement differs from the order of the arguments passed. Named arguments allows us to do so.
+* Make sure you don't pass arguments that are pointing to the same parameter.
+```
+diff = subtract(10, num1=60)
+>> TypeError: subtract() got multiple values for argument 'num1'
+```
+* **Positional argument follows Keyword argument**. While passing arguments, passing a _keyword argument_ first, followed by a _positional argument_ will result in a **syntax error**.
+```
+diff = subtract(num1=10, 60)
+>> SyntaxError: positional argument follows keyword argument
+```
+
 ## Default Parameters
 * We can also set default values for parameters.
 ```python
