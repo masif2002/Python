@@ -27,4 +27,4 @@ print(classroom[3][2])
 ```
 
 ## 3D Arrays
-You can also have 3D Arrays. In 2D Arrays, we've used two square brackets to access an element. Similarly, in 3D Arrays, we use three square brackets to access an element.
+You can also have 3D Arrays in python. In 2D Arrays, we've used two square brackets to access an element. Similarly, in 3D Arrays, we use three square brackets to access an element.
