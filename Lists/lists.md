@@ -42,6 +42,17 @@ careers = ["Pilot", "Teacher", "Developer", "Doctor"]
 for i in careers:
     print(i)
 ```
+## Finding in lists
+Python gives us an easy way to find out whether an element is in the list or not.
+```python
+letters = ["A", "B", "C", "D", "E"]
+if ("B" in letters):
+    print("B is present!")
+
+if ("Z" not in letters):
+    print("Z is not present!")
+```
+For example, if we want to check 
 ## len() function
 The built-in `len()` function allows us to get the length of a list.
 ```python
