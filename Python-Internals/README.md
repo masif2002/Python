@@ -8,9 +8,9 @@
 ----
 * Python is an interpreted language. 
 
-* In order for our computer to understand our human-friendly, Python code, the Python **interpreter** takes our Python code and parses it line by line. 
+* In order for our computer to understand our human-friendly Python code, the Python **interpreter** takes our Python code and parses it line by line. 
 
-* It then creates machine-friendly code, which is code that our computers can understand and execute.
+* It then creates machine-friendly code, which is the code that our computers can understand and execute.
 
 ## Versions of Python
 
@@ -21,7 +21,7 @@
 
 ### Cython
 
-* Cython makes it possible to translate valid Python code directly to C in order to speed up the execution of your code because the resulting code in Python isn't always as efficient as if it were implemented in C. 
+* Cython makes it possible to translate valid Python code directly to C in order to speed up the execution of our code because the resulting code in Python isn't always as efficient as if it were implemented in C. 
 * Cython can run on Linux, MacOS and Windows aswell.
 
 ### Jython
