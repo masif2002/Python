@@ -7,7 +7,7 @@
     * You also can create a multi-line comment using three quotation marks. 
     * But, keep in mind that this technique doesn’t create “true” comments. This simply inserts a text constant that doesn’t do anything.
 * A comment can also be used to comment out the code you don't want to execute.
-```
+```python
 Account = "Savings"
 Balance = 2789.21    #In Rupees
 #Bank: SBI

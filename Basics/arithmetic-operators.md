@@ -46,7 +46,7 @@ Ex: -6 &rarr; Negative 6 (_or_ minus 6)
 * When we use multiple operators in a single expression, Python follows the priority mentioned above.
 * And when we come across two operators with the same priority, we do the operation on the leftmost side first and the move towards the right
 * Let's take an example: 
-```
+```python
 print(10 - 6 ** 2 / 9 * 10 + 1) 
 ```
 1. In the above expression, the first prioority is for the _exponential operator_ (**).
@@ -73,7 +73,7 @@ With _sub-expressions, which are the expression between parantheses, we can chan
 
 Sub Expressions are always calculated first.
 
-```
+```python
 print(2 * (2 + 3))
 ```
 In this case, the sub-expression _2+3_ is calculated first, after which the result is multiplied by _2_ and the final result _10_ is printed out to the console.

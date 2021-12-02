@@ -12,7 +12,7 @@ They return boolean values. ie- either `True` or `False`
 
 
 
-```
+```python
 print(4 == (2 * 2))            
 print("Hello!" == "Hi!")       
 

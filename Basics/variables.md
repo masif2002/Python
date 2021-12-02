@@ -4,7 +4,7 @@
 * Python allows us to redeclare variables overtime, just by assigning it a new value.
 
 A variable has a _name_ and a _value_  
-```
+```python
 name = "Asif"
 age = 19
 ```
@@ -19,18 +19,18 @@ Here, two variables _name_ and _age_ has been created with values _"Asif"_ and _
 Let's say we have to increase the value of the variable _age_ by 2
 
 This is what we normally do
-```
+```python
 age = age + 2
 ```
 But this also can be done in a more cleaner way 
-```
+```python
 age += 2
 ```
 The above line also means the same as the previous line.. which also increases the value of the variable _age_ by 2
 
 Similarly we can do this for any kind of arithmetic operation
 
-```
+```python
 age **= 2
 age *= 2
 age /= 2
