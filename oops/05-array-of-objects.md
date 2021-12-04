@@ -36,6 +36,7 @@ print(Item.array)
 * You could see that, the way the object is being represented is not too friendly.
 * We could change that using a **magic method**, which is `__repr__`
     * _repr_ stands for represntation.
+    * It changes the way how an object is being represented.
 ```python
 def __repr__(self):
     return f"Item(\"{self.name}\", {self.price}, {self.quantity})"
