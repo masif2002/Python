@@ -39,12 +39,20 @@ print(Item.array)
     * It changes the way how an object is being represented.
 ```python
 def __repr__(self):
-    return f"Item(\"{self.name}\", {self.price}, {self.quantity})"
+    return f"{self.__class__.__name__}(\"{self.name}\", {self.price}, {self.quantity})"
+```
+> Output:
+```
+[
+    Item("Noodles", 100, 5),
+    Item("Biryani", 1000, 1),
+    Item("Chocolate", 50, 8)
+]
 ```
 * You can return anything with this method, but we returned a formatted string with the attributes which would make the array of objects more readable.
+* `self.__class__.__name__` returns the name of the class of which the object was created.
 
-
- Using **array of objects** can be helpful when you want to display the value of a particular attribute of all the instances
+ Using **array of objects** also can be helpful when you want to display the value of a particular attribute of all the instances.
 ```python
 for instance in Item.array:
     print(instance.name)
