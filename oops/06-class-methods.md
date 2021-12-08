@@ -46,7 +46,7 @@ name,price,quantity
             print(item)
 
     def __repr__(self):
-        return f"Item(\"{self.name}\", {self.price}, {self.quantity})"
+        return f"{self.__class__.__name__}(\"{self.name}\", {self.price}, {self.quantity})"
 
 Item.instantiate()
 ```
@@ -94,7 +94,7 @@ Now, we have the data ready. The only thing left is to create the instances.
             )
                         
     def __repr__(self):
-        return f"Item(name: {self.name}, price: {self.price}, quantity: {self.quantity})" 
+        return f"{self.__class__.__name__}(\"{self.name}\", {self.price}, {self.quantity})"
 
 Item.instantiate()
 print(Item.array)
