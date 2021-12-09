@@ -14,8 +14,9 @@ print(item1.name)
 
 * Creating a read only attribute means that we have only one opportunity to set the value of our attribute and we cannnot update the value of it later.
 * We should have errors if we try to overwrite the value of the attribute.
+* This is also known as **encapsulation**, one of the key principles of Object Oriented Programming.
 
-We create a read-only attribute by using the _decorator_ `@property` 
+We can create a read-only attribute by using the _decorator_ `@property` 
 * Then we create a function with a function name which is going to be the **name of the read-only attribute**. 
 * Here, for the example, we create an attribute with the name *read_only_attribute*.
 ```python
