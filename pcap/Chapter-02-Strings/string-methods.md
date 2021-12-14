@@ -18,7 +18,7 @@ print('Manty Python'.count('y'))
 ## list()
 Returns a new list containing all the string characters.
 ```python
-print('Hello'.list())
+print(list("Hello"))
 ```
 
 ## capitalize()
