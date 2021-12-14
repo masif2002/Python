@@ -10,7 +10,8 @@ print('Manty Python'.index('t'))
 ```
 
 ## count()
-Returns the total nunber of occurences of the provided character.
+Returns the total number of occurences of the provided character.
+* Start and end index can be passed as second and third arguments to count within the specified range.
 ```python
 print('Manty Python'.count('y'))
 ```
