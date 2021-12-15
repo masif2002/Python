@@ -15,7 +15,7 @@ print(isinstance(snack1, Snack))
 print(isinstance(snack1, Item))
 ```
 * Here, a new class _Snack_ is created which inherits from the class _Item_. 
-* As all the functionalitites are inherited when we inherit the parent class, the constructor of the parent class is invoked, when an object is instantiated (of the child class).
+* As all the functionalities are inherited when we inherit the parent class, the constructor of the parent class is invoked automatically, when an object is instantiated (of the child class).
     * This is because there is no **constructor** defined in the child class as of now.
 
 ## Calling constructor of the parent class
