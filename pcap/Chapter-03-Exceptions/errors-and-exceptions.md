@@ -36,7 +36,61 @@ except:
 print("This prints no matter what")
 ```
 * In the above example, when we enter a string as an input, the **ValueError** specific except block gets executed, since Python raises a ValueError.
-* When we give zero as an input, a **ZeroDivisionError** gets raised as in the second line we divide, 1 by the input we asked for. So the codeblock of ZeroDivisionError gets executed. 
+* When we give zero as an input, a **ZeroDivisionError** gets raised, as in the second line we divide 1 by the input we asked for which is 0 in our case. So the codeblock of ZeroDivisionError gets executed. 
 * The unnamed exception branch will be executed if there are no dedicated branches for the exception that got raised. 
 * If you're working with named except branches , make sure you specify the unnamed except block last.
 * If any of the except branches is executed, no other branches will be visited.  
+
+## else block
+Besides **try** and **except**, there's an additional branch that you can add, namely **else**.
+* You can add this block after the last _except_ statement.
+* The **else** codeblock only gets executed if there was no exception raised in the _try_ block. 
+
+```python
+def calc(x):
+    try:
+        num = 1/x
+        print(num)
+    except ZeroDivisionError:
+        print("Division with zero is not allowed!")
+    else:
+        print("No exceptions raised! All good!")
+    
+calc(0)
+print()
+calc(2)
+```
+
+## finally branch
+This branch always gets executed regardless of what happens. Even if an exception was raised or even if everything worked perfectly!
+```python
+def calc(x):
+    try:
+        num = 1/x
+        print(num)
+    except ZeroDivisionError:
+        print("Division with zero is not allowed!")
+    else:
+        print("No exceptions raised! All good!")
+    finally:
+        print("I don't care. I execute always!")
+calc(0)
+print()
+calc(2)
+```
+## User-defined Exceptions
+
+We can create our own **exception class** by creating a normal class and which inherits from any _Exception_ class like _ValueError_, _TypeError_, _IndexError_ and so on.. Or from the _Exception_ class itself.
+```python
+class EmailError(Exception):
+
+    def __str__(self):
+        return "pending! wrong format!"
+    
+email = "admin#libray.net"
+try:
+    if "@" not in email:
+        raise EmailError()
+except EmailError as e:
+    print(e)
+```
