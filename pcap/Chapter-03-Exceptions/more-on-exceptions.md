@@ -55,7 +55,19 @@ else:
 * You could raise any exception, not just `Exception`, but also exceptions like `ArithmeticError`, `ValueError` and so on.
 * You also can give an optional error message in paranthesis after the exception.
 * You can also use the `raise` keyword unnamed inside an except block.
-
+## Printing the error message
+```python
+try:
+    a = int(input())
+except Exception as msg:
+    print("Error:", msg)
+```
+> Output:
+```
+>> gg
+Error: invalid literal for int() with base 10: 'gg'
+```
+* You can use the `as` keyword to print out the error message to the console when an exception is raised.
 ## assert keyword
 The `assert` keyword evaluates an expression and if this expression evaluates to be True, the execution  would continue normally. If it evaluates to be False, it automatically raises an exception named AssertionError.
 * This can be useful if you want to be absolutely safe from wrong data. It secures your code from producing invalid results. 
