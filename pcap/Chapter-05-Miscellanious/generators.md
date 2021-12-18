@@ -77,3 +77,79 @@ for x in gen():
 6
 8
 ```
+## next() function
+The next() function returns the next item in an iterator.
+```python
+def gen():
+    for i in range(10):
+        if (i % 2 == 0):
+            yield i
+c = gen()
+print(c)
+```
+> Output:
+```
+<generator object gen at 0x03A8FD70>
+```
+Here, we are going to use the next() function in the generator object. Previously, we used a for-loop to iterate over the generator object to print the values. Now, we'll use the next() function to do the same.
+```python
+def gen():
+    for i in range(10):
+        if (i % 2 == 0):
+            yield i
+c = gen()
+print(next(c))
+```
+> Output:
+```
+0
+```
+Using next() once, returns the first item in the iterator object. Using it multiple times, will give us the next items.
+```python
+def gen():
+    for i in range(10):
+        if (i % 2 == 0):
+            yield i
+c = gen()
+print(next(c))
+print(next(c))
+print(next(c))
+print(next(c))
+print(next(c))
+``` 
+> Output:
+```
+0
+2
+4
+6
+8
+```
+Here, _c_ is an iterator object , and is meant to be iterated over once until it is exhausted. Once the object has been exhausted, it will not produce any more elements.  At this point, the generator mechanism is designed to raise a **StopIteration** error if you attempt to iterate over it even after it has been exhausted. 
+* In our example, we should have 5 elements in our iterator object as per the logic of our function. So we've used the next() function 5 times, and the object is now exhausted. If we try to use the next() function one more time, Python raises a StopIteration error.
+```python
+def gen():
+    for i in range(10):
+        if (i % 2 == 0):
+            yield i
+c = gen()
+print(next(c)) #1
+print(next(c)) #2
+print(next(c)) #3
+print(next(c)) #4
+print(next(c)) #5
+print(next(c))
+```
+> Output:
+```
+0
+2
+4
+6
+8
+Traceback (most recent call last):
+  File "C:\Users\User\Documents\Asif\test.py", line 11, in <module>
+    print(next(c))
+StopIteration
+```
+* Constructs such as for loops listen for this error, silently swallowing it, however, next returns the raw exception as soon as it has been raised.
