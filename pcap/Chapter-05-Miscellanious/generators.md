@@ -152,4 +152,4 @@ Traceback (most recent call last):
     print(next(c))
 StopIteration
 ```
-* Constructs such as for loops listen for this error, silently swallowing it, however, next returns the raw exception as soon as it has been raised.
+* Constructs such as for loops listen for this error, silently swallowing it, however, next() returns the raw exception as soon as it has been raised.
