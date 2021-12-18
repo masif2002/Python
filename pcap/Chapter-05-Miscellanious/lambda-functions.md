@@ -58,3 +58,38 @@ print(odd)
 [0, 2, 4, 6, 8]
 [1, 3, 5, 7, 9]
 ```
+## sorted() function
+`sorted()` sorts any sequence and always returns a list with the elements in a sorted manner, without modifying the original sequence.
+
+Syntax:
+```
+sorted(<iterable>, <key>, <reverse>)
+```
+* The optional parameter **reverse** is set to True for sorting in the reverse order, ie- descending order.
+
+* The optional parameter **key** takes a function as its value. This key function transforms each element before sorting, it takes the value and returns 1 value which is then used within sort instead of the original value. 
+
+ For example, if we pass a list of strings in sorted(), it gets sorted alphabetically. But if we specify key = len, i.e. give len function as key, then the strings would be passed to len, and the value it returns, i.e. the length of strings will be sorted. Which means that the strings would be sorted based on their lengths instead.
+ ```python
+ L = ["cccc", "b", "dd", "aaa"]
+
+print("Normal sort :", sorted(L))
+print("Sort with len :", sorted(L, key=len))
+```
+> Output:
+```
+Normal sort : [3, 7, 11, 15]
+Sorted with key: [7, 15, 3, 11]
+```
+Another example, where we sort _events_ according to the _date_.
+```python
+events = [
+        {'date': 11212021, 'name': 'Bengali wedding'},
+        {'date': 11012021, 'name': 'Project meeting'},
+        {'date': 11112021, 'name': 'Guitar class'},
+]
+
+sorted_events = sorted(events, key=lambda x: x['date'])
+print(sorted_events)
+```
+> Reference for sorted() function: geeksforgeeks.org/sorted-function-python/
