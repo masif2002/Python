@@ -30,8 +30,11 @@ print(Item.is_integer(7.0))
 
  A static method can also be accessed from the instance level. 
 
- ## Class methods vs Static methods
-
+## Class methods vs Static methods
+* The difference between the Class method and the static method is:
+    * A class method takes cls as the first parameter while a static method needs no specific parameters.
+    * A class method can access or modify the class state while a static method can’t access or modify it.
+    * In general, static methods know nothing about the class state. They are utility-type methods that take some parameters and work upon those parameters. On the other hand class methods must have class as a parameter.
 ### When do we use a static method?
 We use a static method when we want to do something that should not be unique per instance. Exactly like we did above. 
 * We could use the static method as an isolated function. That is also completely fine **but** we prefer to not do that because, although it is a method that had nothing to do with the instance,  it is somehow related to the class.
